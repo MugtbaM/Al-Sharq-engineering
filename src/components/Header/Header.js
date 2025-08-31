@@ -14,6 +14,10 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleLanguageToggle = () => {
+    toggleLanguage();
+  };
+
   const goToHome = () => {
     if (location.pathname !== '/') {
       navigate('/');
@@ -35,7 +39,7 @@ const Header = () => {
   };
 
   return (
-    <header style={{ direction: isRTL ? 'rtl' : 'ltr' }}>
+    <header>
       <div className="logo-container">
         <img src={logo} alt="AL SHARQ ENGINEERING & LOGISTICS CO.LTD" className="logo" />
         {/* <div className="company-name">
@@ -44,19 +48,43 @@ const Header = () => {
         </div> */}
       </div>
       <nav>
-        <ul className={menuOpen ? 'active' : ''}>
+        {/* Desktop Navigation */}
+        <ul className="desktop-nav">
           <li><a onClick={goToHome}>{language === 'en' ? 'Home' : 'الرئيسية'}</a></li>
           <li><a onClick={() => scrollToSection('about')}>{language === 'en' ? 'About' : 'عن الشركة'}</a></li>
           <li><a onClick={() => scrollToSection('services')}>{language === 'en' ? 'Products & Services' : 'المنتجات والخدمات'}</a></li>
           <li><a onClick={() => scrollToSection('contact')}>{language === 'en' ? 'Contact Us' : 'اتصل بنا'}</a></li>
         </ul>
-        <button className="language-toggle" onClick={toggleLanguage}>
+        
+        {/* Desktop language toggle */}
+        <button className="language-toggle desktop-only" onClick={toggleLanguage}>
           {language === 'en' ? 'AR' : 'EN'}
         </button>
+        
+        {/* Hamburger menu for mobile */}
         <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
           <span></span>
           <span></span>
           <span></span>
+        </div>
+        
+        {/* Mobile menu with language option */}
+        <div className={`mobile-menu ${menuOpen ? 'active' : ''}`}>
+          <div className="mobile-menu-content">
+            <ul className="mobile-nav">
+              <li><a onClick={goToHome}>{language === 'en' ? 'Home' : 'الرئيسية'}</a></li>
+              <li><a onClick={() => scrollToSection('about')}>{language === 'en' ? 'About' : 'عن الشركة'}</a></li>
+              <li><a onClick={() => scrollToSection('services')}>{language === 'en' ? 'Products & Services' : 'المنتجات والخدمات'}</a></li>
+              <li><a onClick={() => scrollToSection('contact')}>{language === 'en' ? 'Contact Us' : 'اتصل بنا'}</a></li>
+            </ul>
+            
+            {/* Language toggle inside mobile menu */}
+            <div className="mobile-language-toggle">
+              <button onClick={handleLanguageToggle}>
+                {language === 'en' ? 'Switch to العربية' : 'التغيير إلى English'}
+              </button>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -67,26 +95,22 @@ export default Header;
 
 
 
-
-
-
-
-
 // import React, { useState } from 'react';
 // import { useNavigate, useLocation } from 'react-router-dom';
-// import logo from '../../assets/images/image0.jpeg';
+// import { useLanguage } from '../../contexts/LanguageContext';
+// import logo from '../../assets/images/comLogo01.png';
 // import './Header.css';
 
 // const Header = () => {
 //   const [menuOpen, setMenuOpen] = useState(false);
 //   const navigate = useNavigate();
 //   const location = useLocation();
+//   const { language, toggleLanguage, isRTL } = useLanguage();
 
 //   const toggleMenu = () => {
 //     setMenuOpen(!menuOpen);
 //   };
 
-//   // Simple function to go to home page
 //   const goToHome = () => {
 //     if (location.pathname !== '/') {
 //       navigate('/');
@@ -94,11 +118,9 @@ export default Header;
 //     setMenuOpen(false);
 //   };
 
-//   // Function to scroll to sections (only works on home page)
 //   const scrollToSection = (sectionId) => {
 //     if (location.pathname !== '/') {
 //       navigate('/');
-//       // Store the section to scroll to after navigation
 //       localStorage.setItem('scrollToSection', sectionId);
 //     } else {
 //       const element = document.getElementById(sectionId);
@@ -110,7 +132,7 @@ export default Header;
 //   };
 
 //   return (
-//     <header>
+//     <header style={{ direction: isRTL ? 'rtl' : 'ltr' }}>
 //       <div className="logo-container">
 //         <img src={logo} alt="AL SHARQ ENGINEERING & LOGISTICS CO.LTD" className="logo" />
 //         {/* <div className="company-name">
@@ -120,11 +142,14 @@ export default Header;
 //       </div>
 //       <nav>
 //         <ul className={menuOpen ? 'active' : ''}>
-//           <li><a onClick={goToHome}>Home</a></li>
-//           <li><a onClick={() => scrollToSection('about')}>About</a></li>
-//           <li><a onClick={() => scrollToSection('services')}>Products & Services</a></li>
-//           <li><a onClick={() => scrollToSection('contact')}>Contact Us</a></li>
+//           <li><a onClick={goToHome}>{language === 'en' ? 'Home' : 'الرئيسية'}</a></li>
+//           <li><a onClick={() => scrollToSection('about')}>{language === 'en' ? 'About' : 'عن الشركة'}</a></li>
+//           <li><a onClick={() => scrollToSection('services')}>{language === 'en' ? 'Products & Services' : 'المنتجات والخدمات'}</a></li>
+//           <li><a onClick={() => scrollToSection('contact')}>{language === 'en' ? 'Contact Us' : 'اتصل بنا'}</a></li>
 //         </ul>
+//         <button className="language-toggle" onClick={toggleLanguage}>
+//           {language === 'en' ? 'AR' : 'EN'}
+//         </button>
 //         <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
 //           <span></span>
 //           <span></span>
