@@ -1,0 +1,236 @@
+header {
+  background-color: var(--white);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 220px;
+  height: 80px;
+  /* background-color: var(--primary); */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.company-name {
+  color: var(--primary);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.company-name .arabic {
+  font-size: 1.2rem;
+  display: block;
+  margin-top: 5px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--dark-text);
+  font-weight: 500;
+  padding: 8px 5px;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  color: var(--primary);
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--primary);
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Language toggle button - positioned far right */
+.language-toggle {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-left: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.language-toggle:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--primary);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* RTL support */
+[dir="rtl"] header {
+  direction: rtl;
+}
+
+[dir="rtl"] .logo-container {
+  direction: ltr; /* Keep logo direction consistent */
+}
+
+[dir="rtl"] nav ul {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[dir="rtl"] .language-toggle {
+  margin-left: 0;
+  margin-right: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+  
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul.active {
+    display: flex;
+  }
+  
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 15px;
+  }
+
+  /* Language toggle button - CENTERED on mobile */
+  .language-toggle {
+    position: fixed;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    z-index: 102;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  [dir="rtl"] .language-toggle {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+  
+  /* .language-toggle {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    margin: 0;
+  }
+  
+  [dir="rtl"] .language-toggle {
+    right: auto;
+    left: 1rem;
+  } */
+  
+  .hamburger {
+    display: flex;
+  }
+  
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+  
+  .company-name {
+    font-size: 1.4rem;
+  }
+  
+  .company-name .arabic {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-name {
+    font-size: 1.2rem;
+  }
+  
+  /* .logo {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  } */
+}

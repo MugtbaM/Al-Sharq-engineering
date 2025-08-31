@@ -1,4 +1,121 @@
-.App {
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #a0563f;
+  --secondary: #eac88c;
+  --white: #ffffff;
+  --light-bg: #f9f6f2;
+  --dark-text: #333333;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--primary);
+  font-size: 2.2rem;
+  position: relative;
+  padding-top: 5rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--secondary);
+}
+
+.cards-container {
+  padding: 2rem 0 5rem;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 2rem;
+}
+
+/* Add these RTL styles to your existing App.css */
+
+/* RTL general styles */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .section-title::after {
+  left: auto;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+[dir="rtl"] .more-link i {
+  transform: rotate(180deg);
+  margin-right: 8px;
+  margin-left: 0;
+}
+
+[dir="rtl"] .more-link:hover i {
+  transform: rotate(180deg) translateX(5px);
+}
+
+/* RTL card styles */
+[dir="rtl"] .card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* RTL footer styles */
+[dir="rtl"] .footer-section h3::after {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .footer-content {
+  text-align: right;
+}
+
+/* Responsive RTL styles */
+@media (max-width: 768px) {
+  [dir="rtl"] .card,
+  [dir="rtl"] .card.reverse {
+    flex-direction: column;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+    padding-top: 3rem;
+  }
+}
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +152,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
