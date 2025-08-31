@@ -9,7 +9,7 @@ const ServiceCard = ({ title, image, content, link, imagePosition }) => {
         style={{ backgroundImage: `url(${image})` }}
       >
         <div className="service-image-overlay">
-          <h3>{title}</h3>
+          {/* <h3>{title}</h3> */}
         </div>
       </div>
       <div className="service-card-content">

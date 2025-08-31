@@ -17,7 +17,7 @@ const Card = ({ title, image, content, link, imagePosition }) => {
         </div>
       </div>
       <div className="card-content">
-        <h2>{title}</h2>
+        {/* <h2>{title}</h2> */}
         <p>{content}</p>
         <Link to={link} className="more-link">
           {language === 'en' ? 'Learn More' : 'المزيد'}{" "}

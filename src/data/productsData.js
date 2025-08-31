@@ -14,6 +14,13 @@ export const productsData = [
       contentAr: "نوفر جبسًا عالي الجودة للاستخدامات في البناء، وإنتاج الأسمنت، والتطبيقات الزراعية. نستورده بعناية من موردين موثوقين، ويلبي جبسنا معايير صارمة للنقاء والاتساق والأداء. كما نوفر الحجر الجيري عالي الجودة لتصنيع الأسمنت، وإنتاج الصلب، والاستخدامات الصناعية. يُستخرج الحجر الجيري من محاجر مرموقة، ويُعالَج وفقًا لمواصفات صارمة فيما يتعلق بالتركيب الكيميائي، والمتانة، والأداء"
     },
     {
+        title: "Cement Clinker",
+        titleAr: "كلنكر الأسمنت",
+        image: "https://www.cementsilo.com/d/pic/clinker-material.jpg",
+        content: "We provide efficient shipping of cement clinker from production sites to factories worldwide. Leveraging our reliable logistics network, we ensure safe, timely, and cost-effective deliveries. Our services support cement manufacturers in maintaining steady production flows. With a focus on quality and dependability, we are a trusted partner in the global clinker supply chain.",
+        contentAr: "نوفر شحنًا فعالًا لكلنكر الأسمنت من مواقع الإنتاج إلى المصانع حول العالم. بفضل شبكتنا اللوجستية الموثوقة، نضمن توصيلًا آمنًا وفي الوقت المناسب وبتكلفة معقولة. تدعم خدماتنا مصنعي الأسمنت في الحفاظ على تدفقات إنتاج ثابتة. بتركيزنا على الجودة والموثوقية، نُعد شريكًا موثوقًا به في سلسلة توريد الكلنكر العالمية"
+      },
+    {
       title: "Our Services",
       titleAr: "خدماتنا",
       image: "https://shaam.org/imgs/posts/2025/6/1750111551622.webp",
