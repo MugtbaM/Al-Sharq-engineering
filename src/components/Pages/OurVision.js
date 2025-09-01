@@ -45,7 +45,7 @@ const OurVision = () => {
         
         <div className="page-card">
           <div className="page-card-image">
-            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt={language === 'en' ? 'Global Expansion' : 'التوسع العالمي'} />
+            <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt={language === 'en' ? 'Global Expansion' : 'التوسع العالمي'} />
           </div>
           <div className="page-card-text">
             <h2>{language === 'en' ? 'Global Expansion' : 'التوسع العالمي'}</h2>

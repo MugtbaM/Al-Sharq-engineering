@@ -39,13 +39,13 @@ const WhatWeDo = () => {
             </p>
           </div>
           <div className="page-card-image">
-            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt={language === 'en' ? 'Engineering Solutions' : 'الحلول الهندسية'} />
+            <img src="https://images.unsplash.com/photo-1634638025184-9ab3d47c8b74?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt={language === 'en' ? 'Engineering Solutions' : 'الحلول الهندسية'} />
           </div>
         </div>
         
         <div className="page-card">
           <div className="page-card-image">
-            <img src="https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt={language === 'en' ? 'Logistics Services' : 'الخدمات اللوجستية'} />
+            <img src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt={language === 'en' ? 'Logistics Services' : 'الخدمات اللوجستية'} />
           </div>
           <div className="page-card-text">
             <h2>{language === 'en' ? 'Logistics Services' : 'الخدمات اللوجستية'}</h2>
