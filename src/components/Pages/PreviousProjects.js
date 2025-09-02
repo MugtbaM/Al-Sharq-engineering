@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
+import image from '../../assets/images/three.png';
 import './Pages.css';
 
 const PreviousProjects = () => {
@@ -39,7 +40,7 @@ const PreviousProjects = () => {
             </p>
           </div>
           <div className="page-card-image">
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt={language === 'en' ? 'Industrial Complex' : 'المجمع الصناعي'} />
+            <img src={image} alt={language === 'en' ? 'Industrial Complex' : 'المجمع الصناعي'} />
           </div>
         </div>
         
