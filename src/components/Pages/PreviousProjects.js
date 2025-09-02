@@ -25,17 +25,11 @@ const PreviousProjects = () => {
       <div className="page-content">
         <div className="page-card">
           <div className="page-card-text">
-            <h2>{language === 'en' ? 'Industrial Complex Development' : 'تطوير المجمع الصناعي'}</h2>
+            <h2>{language === 'en' ? 'Our Business Network' : 'شبكة أعمالنا'}</h2>
             <p>
               {language === 'en' 
-                ? 'We designed and managed the construction of a state-of-the-art industrial complex spanning 50,000 square meters. This project involved coordinating multiple engineering disciplines to create a facility that optimizes workflow, energy efficiency, and safety standards.'
-                : 'صممنا وأدرنا بناء مجمع صناعي متطور بمساحة 50,000 متر مربع. تضمن هذا المشروع تنسيق تخصصات هندسية متعددة لإنشاء منشأة تعمل على تحسين سير العمل وكفاءة الطاقة ومعايير السلامة.'
-              }
-            </p>
-            <p>
-              {language === 'en' 
-                ? 'The complex now houses manufacturing, warehousing, and administrative functions for a leading consumer goods company, serving as a model for integrated industrial design in the region.'
-                : 'يضم المجمع الآن وظائف التصنيع والتخزين والإدارة لشركة رائدة في مجال السلع الاستهلاكية، مما يجعله نموذجًا للتصميم الصناعي المتكامل في المنطقة.'
+                ? 'At the core of our operations are three major companies specializing in transportation, logistics, and mining. Together, they create a strong, integrated network that drives efficiency across the entire supply chain. From resource extraction to global distribution, each company plays a vital role in delivering value to our clients. This synergy forms the foundation of our growth and long-term success.'
+                : 'تتمحور عملياتنا حول ثلاث شركات رئيسية متخصصة في النقل والخدمات اللوجستية والتعدين. تُشكّل هذه الشركات معًا شبكةً قويةً ومتكاملةً تُعزز الكفاءة عبر سلسلة التوريد بأكملها. من استخراج الموارد إلى التوزيع العالمي، تلعب كل شركة دورًا حيويًا في تقديم القيمة لعملائنا. يُشكّل هذا التآزر أساس نمونا ونجاحنا على المدى الطويل'
               }
             </p>
           </div>
