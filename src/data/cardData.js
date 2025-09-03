@@ -1,4 +1,4 @@
-import image from '../../src/assets/images/three.png';
+import image from '../../src/assets/images/threetransparent.png';
 
 export const cardData = [
     {
