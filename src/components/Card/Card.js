@@ -19,10 +19,12 @@ const Card = ({ title, image, content, link, imagePosition }) => {
       <div className="card-content">
         {/* <h2>{title}</h2> */}
         <p>{content}</p>
-        <Link to={link} className="more-link">
+        {link && (
+          <Link to={link} className="more-link">
           {language === 'en' ? 'Learn More' : 'المزيد'}{" "}
           <i className="fas fa-arrow-right"></i>
         </Link>
+        )}
       </div>
     </div>
   );

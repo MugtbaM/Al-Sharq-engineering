@@ -1,3 +1,5 @@
+import image from '../../src/assets/images/three.png';
+
 export const cardData = [
     {
       title: "What We Do",
@@ -14,6 +16,14 @@ export const cardData = [
       content: "To be the leading provider of engineering and logistics solutions in the region, recognized for innovation, reliability, and excellence. We aim to transform industries through cutting-edge technology and efficient processes that drive sustainable growth for our clients.",
       contentAr: "أن نكون المزود الرائد لحلول الهندسة والخدمات اللوجستية في المنطقة، معترف بنا للابتكار، والموثوقية، والتميز. نهدف إلى تحويل الصناعات من خلال التكنولوجيا المتطورة والعمليات الفعالة التي تدفع النمو المستدام لعملائنا.",
       link: "/our-vision"
+    },
+    {
+      title: "Our Business Network",
+      titleAr: "شبكة أعمالنا",
+      image: image,
+      content: "At the core of our operations are three major companies specializing in transportation, logistics, and mining. Together, they create a strong, integrated network that drives efficiency across the entire supply chain. From resource extraction to global distribution, each company plays a vital role in delivering value to our clients. This synergy forms the foundation of our growth and long-term success.",
+      contentAr: "تتمحور عملياتنا حول ثلاث شركات رئيسية متخصصة في النقل والخدمات اللوجستية والتعدين. تُشكّل هذه الشركات معًا شبكةً قويةً ومتكاملةً تُعزز الكفاءة عبر سلسلة التوريد بأكملها. من استخراج الموارد إلى التوزيع العالمي، تلعب كل شركة دورًا حيويًا في تقديم القيمة لعملائنا. يُشكّل هذا التآزر أساس نمونا ونجاحنا على المدى الطويل",
+      link: null
     },
     {
       title: "Previous Projects",
