@@ -1,4 +1,5 @@
 import image from '../../src/assets/images/threetransparent.png';
+import clients from '../../src/assets/images/clientswide.jpg';
 
 export const cardData = [
     {
@@ -26,11 +27,11 @@ export const cardData = [
       link: null
     },
     {
-      title: "Previous Projects",
-      titleAr: "المشاريع السابقة",
-      image: "https://media.istockphoto.com/id/531523399/photo/loading-of-coal-on-the-freighter.jpg?s=612x612&w=0&k=20&c=y8FDLrZ-JsVq9ZmvsVLobz-UeCeo-ORxBslOu9QvKmU=",
-      content: "We have successfully delivered projects across various sectors including oil & gas, manufacturing, healthcare, and retail. Our portfolio includes the automation of a major production facility, logistics optimization for a retail chain, and the design of sustainable infrastructure solutions.",
-      contentAr: "لقد نجحنا في تقديم مشاريع عبر قطاعات مختلفة بما في ذلك النفط والغاز، والتصنيع، والرعاية الصحية، والتجزئة. تشمل محفظتنا أتمتة منشأة إنتاج كبرى، وتحسين اللوجستيات لسلسلة متاجر، وتصميم حلول بنية تحتية مستدامة.",
-      link: "/previous-projects"
+      title: "Our Clients",
+      titleAr: "عملاؤنا",
+      image: clients,
+      content: "We serve a diverse portfolio of clients across the energy, construction, and industrial sectors. From power plants and cement factories to large-scale infrastructure projects, our partners rely on us for quality raw materials and dependable delivery. With every client, we build lasting relationships based on trust, reliability, and performance.",
+      contentAr: "نخدم مجموعة متنوعة من العملاء في قطاعات الطاقة والبناء والصناعة. من محطات الطاقة ومصانع الأسمنت إلى مشاريع البنية التحتية الضخمة، يعتمد شركاؤنا علينا للحصول على مواد خام عالية الجودة وخدمات توصيل موثوقة. مع كل عميل، نبني علاقات متينة قائمة على الثقة والموثوقية والأداء",
+      link: null
     }
   ];
