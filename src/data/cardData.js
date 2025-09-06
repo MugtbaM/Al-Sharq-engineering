@@ -1,5 +1,5 @@
 import image from '../../src/assets/images/threetransparent.png';
-import clients from '../../src/assets/images/clientswide.jpg';
+import clients from '../../src/assets/images/clientswide02.png';
 
 export const cardData = [
     {
