@@ -1,4 +1,173 @@
-/* Pages.css */
+.page-container {
+  min-height: calc(100vh - 200px);
+  padding-top: 80px;
+}
+
+.page-hero {
+  background: linear-gradient(to right, rgba(160, 86, 63, 0.8), rgba(234, 200, 140, 0.7)), url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  margin-bottom: 3rem;
+}
+
+.page-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.page-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 5rem;
+}
+
+.page-card {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+  width: 66.66%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-card-text {
+  padding: 2.5rem;
+}
+
+.page-card-text h2 {
+  color: #a0563f;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-align: start; /* This will adapt to RTL/LTR */
+}
+
+.page-card-text p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  text-align: start; /* This will adapt to RTL/LTR */
+}
+
+.page-card-image {
+  height: 33.33%;
+  overflow: hidden;
+}
+
+.page-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* RTL specific styles */
+/* [dir="rtl"] .page-hero {
+  text-align: right;
+} */
+
+[dir="rtl"] .page-card-text {
+  text-align: right;
+}
+
+[dir="rtl"] .page-card-text h2,
+[dir="rtl"] .page-card-text p {
+  text-align: right;
+}
+
+[dir="rtl"] .page-card:nth-child(even) .page-card-text {
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  .page-card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 3rem 1.5rem;
+  }
+  
+  .page-hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .page-hero p {
+    font-size: 1rem;
+  }
+  
+  .page-content {
+    padding: 0 1.5rem 3rem;
+  }
+  
+  .page-card {
+    width: 100%;
+  }
+  
+  .page-card-text {
+    padding: 1.5rem;
+  }
+  
+  .page-card-text h2 {
+    font-size: 1.5rem;
+  }
+  
+  /* Ensure proper text alignment on mobile for RTL */
+  [dir="rtl"] .page-card-text,
+  [dir="rtl"] .page-card:nth-child(even) .page-card-text {
+    text-align: right;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero {
+    padding: 2rem 1rem;
+  }
+  
+  .page-hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .page-card-text {
+    padding: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .page-container {
     min-height: calc(100vh - 200px);
     padding-top: 80px;
@@ -69,7 +238,7 @@
     object-fit: cover;
   }
   
-  /* Responsive Design */
+
   @media (max-width: 1024px) {
     .page-card {
       width: 80%;
@@ -118,4 +287,4 @@
     .page-card-text {
       padding: 1rem;
     }
-  }
+  } */
